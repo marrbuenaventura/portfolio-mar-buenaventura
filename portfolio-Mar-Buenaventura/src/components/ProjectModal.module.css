@@ -1,0 +1,139 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 3, 10, 0.85);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 2rem;
+    animation: fade-in 0.2s ease-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    background: var(--bg-terminal);
+    border: 1px solid rgba(0, 242, 254, 0.3);
+    border-radius: 8px;
+    max-width: 560px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2rem;
+    box-shadow: var(--neon-glow-cyan);
+    animation: modal-pop 0.25s ease-out;
+}
+
+@keyframes modal-pop {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.logLine {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--cyan-neon);
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--text-main);
+}
+
+.closeButton {
+    background: transparent;
+    border: 1px solid var(--pink-neon);
+    color: var(--pink-neon);
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-family: var(--font-code);
+    transition: box-shadow 0.2s;
+}
+
+.closeButton:hover {
+    box-shadow: var(--neon-glow-pink);
+}
+
+.classification {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: var(--purple-neon);
+    margin-bottom: 1rem;
+}
+
+.detail {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+.metricsBox {
+    background: rgba(0, 0, 0, 0.3);
+    border-left: 3px solid var(--cyan-neon);
+    border-radius: 4px;
+    padding: 1rem;
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: var(--text-main);
+    margin-bottom: 1.25rem;
+}
+
+.stack {
+    font-family: var(--font-code);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+
+.linksRow {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.linkBtn {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: var(--cyan-neon);
+    border: 1px solid var(--cyan-neon);
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.linkBtn:hover {
+    box-shadow: var(--neon-glow-cyan);
+    transform: translateY(-2px);
+}

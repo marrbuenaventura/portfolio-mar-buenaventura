@@ -1,0 +1,55 @@
+.section {
+    padding: 2rem 0 6rem;
+}
+
+.label {
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    color: var(--cyan-neon);
+    margin-bottom: 1.5rem;
+}
+
+.linkRow {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.link {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    color: var(--text-main);
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.link:hover {
+    transform: translateY(-2px);
+}
+
+.linkGithub {
+    border: 1px solid var(--cyan-neon);
+}
+
+.linkGithub:hover {
+    box-shadow: var(--neon-glow-cyan);
+}
+
+.linkLinkedin {
+    border: 1px solid var(--purple-neon);
+}
+
+.linkLinkedin:hover {
+    box-shadow: var(--neon-glow-purple);
+}
+
+.linkEmail {
+    border: 1px solid var(--pink-neon);
+}
+
+.linkEmail:hover {
+    box-shadow: var(--neon-glow-pink);
+}
