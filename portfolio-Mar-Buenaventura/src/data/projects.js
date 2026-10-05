@@ -19,7 +19,7 @@ export const projects = [
         classification: 'Aplicación móvil · trabajo final integrador',
         detail: 'Trabajo final integrador desarrollado en equipo con Ionic y Angular sobre Supabase. Incluye escaneo de QR de mesa/entrada/propina y de DNI (PDF417) con @capacitor-mlkit/barcode-scanning, registro de clientes con cámara, gestión de estados de mesa, y un chat en tiempo real estilo WhatsApp entre cliente y mozo con historial y suscripción realtime.',
         metrics: ['escáner QR + DNI', 'chat realtime', 'trabajo en equipo'],
-        repoUrl: '', 
+        repoUrl: 'https://github.com/sebastian-hg/QResto.git', 
     },
     {
         id: 'pa-siempre',
@@ -30,7 +30,7 @@ export const projects = [
         classification: 'Aplicación de escritorio · juego narrativo',
         detail: 'Point-and-click con cinco salas temáticas, cada una con hotspots de exploración, un mini-juego y una recompensa narrativa. Resueltos bugs de closures en loops de animación con useRef, políticas de autoplay de Electron y empaquetado a instalador .exe con electron-builder.',
         metrics: ['5 salas jugables', 'video final + créditos', 'build .exe Windows'],
-        repoUrl: '', 
+        repoUrl: 'https://github.com/marrbuenaventura/Pa-SIempre.git', 
         liveUrl: '',
     },
     {
@@ -65,6 +65,6 @@ export const projects = [
         classification: 'Aplicación web · PWA · trabajo académico',
         detail: 'Sistema completo para venta y operación de un cine: mapa de butacas interactivo con disponibilidad en tiempo real (butacas accesibles y VIP diferenciadas), asignación automática de sala al crear funciones respetando reglas de no-solapamiento e intervalos, compra con cupones y candy bar en un mismo checkout, entrada en PDF con QR único que valida ingreso y retiro de candy bar, programa de fidelización por puntos, reseñas, y un backoffice con reportes exportables a PDF/Excel y auditoría de operaciones. Trabajo práctico en equipo para Programación IV.',
         metrics: ['mapa de butacas en tiempo real', 'reportes exportables (PDF/Excel)', 'trabajo en equipo'],
-        repoUrl: '', 
+        repoUrl: 'https://github.com/marrbuenaventura/TP1PrograIV_Martina_Buenaventura.git', 
     },
 ]
